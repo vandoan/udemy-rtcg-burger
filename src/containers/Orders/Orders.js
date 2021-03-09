@@ -1,10 +1,15 @@
-import React, { Component  } from 'React';
-import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
+import React, { Component } from 'react';
+import Order from '../../components/Order/Order';
 
-class Order extends Component {
+class Orders extends Component {
     render() {
-        return();
+            return ( 
+                <div>
+                    <Order />
+                    <Order />
+                </div >
+            )
     }
 }
 
-export default OrderSummary;
+export default Orders;

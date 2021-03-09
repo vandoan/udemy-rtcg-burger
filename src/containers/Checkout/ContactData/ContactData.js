@@ -17,12 +17,12 @@ class ContactData extends Component {
 
     orderHandler = (event) => {
         event.preventDefault();
-        console.log(this.props.ingredients);
+        // console.log(this.props.ingredients);
 
         // alert('Onwards');
         this.setState({ loading: true })
         const order = {
-            ingredients: this.props.ingredients,
+                ingredients: this.props.ingredients,
             price: this.props.price,
             customer: {
                 name: 'Wing Dinger',
@@ -64,7 +64,7 @@ class ContactData extends Component {
         return (
             <div className='ContactData'>
                 <h4> Enter your Contact Data</h4>
-                { form}
+                { form }
             </div>
         )
     }
